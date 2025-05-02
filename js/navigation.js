@@ -19,12 +19,14 @@ document.addEventListener('DOMContentLoaded', initNavigation);
 function initNavigation() {
   if (!navToggle || !navWrapper) return;
   
-  // Add event listeners for opening/closing navigation
-  navToggle.addEventListener('click', openNavigation);
-  
-  if (navClose) {
-    navClose.addEventListener('click', closeNavigation);
-  }
+  // Add event listener for opening navigation
+  navToggle.addEventListener('click', () => {
+    if (body.classList.contains('nav-active')) {
+      closeNavigation();
+    } else {
+      openNavigation();
+    }
+  });
   
   // Close navigation when clicking outside of content
   navWrapper.addEventListener('click', (e) => {
