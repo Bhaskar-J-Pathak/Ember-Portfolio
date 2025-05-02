@@ -1,0 +1,350 @@
+/* 
+===============================
+RESPONSIVE STYLES
+===============================
+*/
+
+/* Large screens (above 1400px) */
+@media screen and (min-width: 1401px) {
+    /* Slightly larger font sizes for very large screens */
+    .intro-heading {
+      font-size: calc(var(--text-8xl) * 1.1);
+    }
+  }
+  
+  /* Desktop (1200px - 1400px) */
+  @media screen and (max-width: 1400px) {
+    /* Font size adjustments */
+    .intro-heading {
+      font-size: var(--text-7xl);
+    }
+    
+    .contact-preview-title {
+      font-size: var(--text-4xl);
+    }
+    
+    /* Work item adjustments */
+    .work-item-title {
+      font-size: var(--text-4xl);
+    }
+    
+    /* Spacing adjustments */
+    .intro-section {
+      padding-top: var(--space-24);
+    }
+  }
+  
+  /* Smaller desktops and tablets (992px - 1199px) */
+  @media screen and (max-width: 1199px) {
+    /* Font size adjustments */
+    .intro-heading {
+      font-size: var(--text-6xl);
+    }
+    
+    /* Grid layout adjustments */
+    .intro-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+    
+    .about-preview-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+    }
+    
+    /* Resize elements */
+    .about-preview-image {
+      height: 60vh;
+    }
+    
+    .work-item-media {
+      height: 60vh;
+    }
+    
+    /* Nav adjustments */
+    .nav-link-item a {
+      font-size: var(--text-4xl);
+    }
+    
+    /* Spacing adjustments */
+    .section-header {
+      margin-bottom: var(--space-12);
+    }
+    
+    .testimonial-text {
+      font-size: var(--text-lg);
+    }
+  }
+  
+  /* Tablets (768px - 991px) */
+  @media screen and (max-width: 991px) {
+    /* Font size adjustments */
+    .intro-heading {
+      font-size: var(--text-5xl);
+    }
+    
+    .intro-subheading-text {
+      font-size: var(--text-lg);
+    }
+    
+    .work-item-title {
+      font-size: var(--text-3xl);
+    }
+    
+    .about-preview-paragraph {
+      font-size: var(--text-lg);
+    }
+    
+    .quote-text {
+      font-size: var(--text-3xl);
+    }
+    
+    /* Grid layout adjustments */
+    .work-item {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+    
+    .work-item-content {
+      padding-top: var(--space-6);
+      padding-bottom: var(--space-12);
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      text-align: center;
+    }
+    
+    .footer-right {
+      align-items: center;
+    }
+    
+    .footer-contact {
+      align-items: center;
+    }
+    
+    /* Resize elements */
+    .work-item-media {
+      height: 50vh;
+    }
+    
+    .about-preview-image {
+      height: 50vh;
+    }
+    
+    /* Spacing adjustments */
+    .work-section,
+    .about-preview-section,
+    .testimonial-section,
+    .journal-preview-section {
+      padding: var(--space-16) var(--space-6);
+    }
+    
+    .quote-section {
+      padding: var(--space-20) var(--space-6);
+    }
+    
+    .contact-preview-section {
+      padding: var(--space-24) var(--space-6);
+    }
+    
+    /* Header adjustments */
+    .site-header {
+      padding: var(--space-6);
+    }
+    
+    .header-right {
+      gap: var(--space-4);
+    }
+  }
+  
+  /* Mobile phones (up to 767px) */
+  @media screen and (max-width: 767px) {
+    /* Font size adjustments */
+    .intro-heading {
+      font-size: var(--text-4xl);
+    }
+    
+    .section-title {
+      font-size: var(--text-3xl);
+    }
+    
+    .contact-preview-title {
+      font-size: var(--text-3xl);
+    }
+    
+    /* Grid layout adjustments */
+    .journal-preview-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Element adjustments */
+    .nav-link-item a {
+      font-size: var(--text-3xl);
+    }
+    
+    .intro-image-wrapper {
+      height: 50vh;
+    }
+    
+    .intro-meta {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+    
+    .testimonial-controls {
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+    
+    .header-cta-text {
+      display: none;
+    }
+    
+    .header-cta {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .theme-toggle-track {
+      width: 44px;
+      height: 24px;
+    }
+    
+    .theme-toggle-thumb {
+      width: 20px;
+      height: 20px;
+    }
+    
+    [data-theme="dark"] .theme-toggle-thumb {
+      transform: translateX(20px);
+    }
+    
+    /* Spacing adjustments */
+    .intro-section {
+      padding-top: var(--space-16);
+    }
+    
+    .section-header {
+      margin-bottom: var(--space-8);
+    }
+    
+    .work-gallery {
+      gap: var(--space-16);
+    }
+    
+    /* Nav adjustments */
+    .nav-toggle {
+      top: var(--space-6);
+      right: var(--space-6);
+    }
+    
+    .nav-content {
+      padding: var(--space-12) var(--space-6);
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+  }
+  
+  /* Small mobile phones (up to 480px) */
+  @media screen and (max-width: 480px) {
+    /* Font size adjustments */
+    .intro-heading {
+      font-size: var(--text-3xl);
+    }
+    
+    .work-item-title {
+      font-size: var(--text-2xl);
+    }
+    
+    .quote-text {
+      font-size: var(--text-2xl);
+    }
+    
+    /* Element adjustments */
+    .intro-image-wrapper {
+      height: 40vh;
+    }
+    
+    .work-item-media {
+      height: 40vh;
+    }
+    
+    .about-preview-image {
+      height: 40vh;
+    }
+    
+    /* Spacing adjustments */
+    .work-section,
+    .about-preview-section,
+    .testimonial-section,
+    .journal-preview-section {
+      padding: var(--space-12) var(--space-4);
+    }
+    
+    .quote-section {
+      padding: var(--space-16) var(--space-4);
+    }
+    
+    .contact-preview-section {
+      padding: var(--space-20) var(--space-4);
+    }
+    
+    /* Footer adjustments */
+    .site-footer {
+      padding: var(--space-12) var(--space-4) var(--space-6);
+    }
+    
+    .footer-social,
+    .footer-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .nav-toggle,
+    .nav-wrapper,
+    .magnetic-cursor,
+    .preloader,
+    .theme-toggle,
+    .intro-scroll-hint,
+    .work-view-more,
+    .testimonial-controls,
+    .journal-preview-more,
+    .contact-preview-section,
+    .footer-social,
+    .back-to-top-button {
+      display: none !important;
+    }
+    
+    body {
+      background-color: white;
+      color: black;
+    }
+    
+    .intro-section,
+    .work-section,
+    .about-preview-section,
+    .quote-section,
+    .testimonial-section,
+    .journal-preview-section {
+      padding: 20px 0;
+      page-break-inside: avoid;
+    }
+    
+    .site-footer {
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+  }
